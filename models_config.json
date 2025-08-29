@@ -1,0 +1,29 @@
+{
+    "ridge_v1": {
+        "type": "ridge",
+        "scaler": "robust",
+        "params": {
+            "alpha": 0.1,
+            "random_state": 42
+        }
+    },
+    "gbr_v1": {
+        "type": "gradient_boosting",
+        "scaler": null,
+        "params": {
+            "learning_rate": 0.1,
+            "n_estimators": 100,
+            "max_depth": 5,
+            "random_state": 42
+        }
+    },
+    "rf_v1": {
+        "type": "random_forest",
+        "scaler": null,
+        "params": {
+            "max_features": 0.3,
+            "max_depth": 20,
+            "random_state": 42
+        }
+    }
+}

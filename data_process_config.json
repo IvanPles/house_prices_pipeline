@@ -1,0 +1,47 @@
+{
+    "fill_na": {
+        "Electrical": "SBrkr",
+        "KitchenQual": "TA",
+        "PoolQC": "None",
+        "Exterior1st": "VinylSd",
+        "Exterior2nd": "VinylSd",
+        "SaleType": "WD",
+        "LotFrontage": 69.0,
+        "Alley": "None",
+        "MasVnrType": "None",
+        "MasVnrArea": 0.0,
+        "FireplaceQu": "None",
+        "Fence": "None",
+        "MiscFeature": "None",
+        "GarageYrBlt": 0.0,
+        "GarageArea": 0.0,
+        "GarageCars": 0.0,
+        "GarageType": "None",
+        "GarageFinish": "None",
+        "GarageQual": "None",
+        "GarageCond": "None",
+        "BsmtQual": "None",
+        "BsmtCond": "None",
+        "BsmtExposure": "None",
+        "BsmtFinType1": "None",
+        "BsmtFinType2": "None"
+    },
+    "outliers": {
+        "GrLivArea": [
+            -0.05,
+            4500
+        ]
+    },
+    "to_categorical": [
+        "MSSubClass",
+        "YrSold",
+        "MoSold"
+    ],
+    "cols_to_drop": [
+        "Utilities",
+        "Street",
+        "PoolQC",
+        "Id"
+    ],
+    "log_norm": true
+}

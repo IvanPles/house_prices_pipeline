@@ -1,0 +1,20 @@
+stages:
+  data_process:
+    cmd: python data_loader.py
+    deps: 
+      - data/train.csv
+      - data_loader.py
+      - data_process_config.json
+    outs: 
+      - data/train_prepped.csv
+      - data/test_prepped.csv
+  train:
+    cmd: python train_model.py
+    deps:      
+      - data/train_prepped.csv
+      - data/test_prepped.csv
+      - train_model.py
+      - models_config.json
+    outs:
+      - models/
+
