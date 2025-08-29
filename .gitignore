@@ -6,7 +6,6 @@ __pycache__/
 /data
 /models
 /mlruns 
-/.dvc
 
 # Jupyter Notebook
 .ipynb_checkpoints
