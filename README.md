@@ -25,6 +25,7 @@ dvc repro
 
 для воспроизведения окружения в conda:
 conda create -n ml_env python=3.10.8 -y
+
 pip install -r requirements.txt
 
 Результаты:
